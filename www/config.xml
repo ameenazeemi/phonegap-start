@@ -6,14 +6,14 @@
         id        = "com.phonegap.hello-world"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+    <name>MyLoader APP</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        MyLoad APP is app to load
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        PhoneGap Team
+    <author href="http://loader.com" email="support@loader.com">
+        loader team
     </author>
 
     <!--
@@ -47,6 +47,10 @@
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 
     <!-- Plugins can also be added here. -->
+  <gap:plugin name="com.phonegap.plugins.facebookconnect">
+    <param name="APP_ID" value="..." />
+    <param name="APP_NAME" value="..." />
+  </gap:plugin>
     <!--
         <gap:plugin name="Example" />
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
